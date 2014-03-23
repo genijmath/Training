@@ -1,0 +1,62 @@
+2014-03-22 16-47-24
+
+
+Problem Statement
+    
+You are analyzing the behavior of an organism with peculiar growth patterns. Initially, you have placed the organisms at various spots in a rectangular tray. To precisely measure where each organism is, you have overlaid the tray with a Cartesian coordinate system.  The initial state will be described in int[]s xs and ys. Organism i is located at coordinates (xs[i],ys[i]). You have noticed that if organisms are present at (x1,y1) and (x2,y2) then shortly afterward, there will also be an organism at ( (x1+x2)/2 , (y1+y2)/2 ). There is no truncation in this operation, so organisms can occur at non-integral coordinates. As far as you are concerned, the organisms are each points, and the process has been allowed to run until completion.  You feel that an accurate measure of the final number of organisms is the area they cover. Return this area.
+Definition
+    
+Class:
+CultureGrowth
+Method:
+finalTray
+Parameters:
+int[], int[]
+Returns:
+double
+Method signature:
+double finalTray(int[] xs, int[] ys)
+(be sure your method is public)
+Limits
+    
+Time limit (s):
+2.000
+Memory limit (MB):
+64
+Notes
+-
+Return values must be accurate to 1e-9, relative or absolute.
+-
+To be mathematically precise, we assume that each organism takes up some small amount of area.
+Constraints
+-
+xs will contain between 1 and 50 elements inclusive.
+-
+ys will contain the same number of elements as xs.
+-
+Each element of xs and ys will be between 0 and 10000 inclusive.
+-
+Every point (xs[i],ys[i]) will be distinct.
+Examples
+0)
+
+    
+{0, 3, 6, 10}
+{0, 3, 6, 10}
+Returns: 0.0
+The organisms are all in a line.
+1)
+
+    
+{10}
+{240}
+Returns: 0.0
+Only a single organism.
+2)
+
+    
+{10,15,3,37}
+{49,49,12,8}
+Returns: 745.5
+
+This problem statement is the exclusive and proprietary property of TopCoder, Inc. Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited. (c)2003, TopCoder, Inc. All rights reserved.    
